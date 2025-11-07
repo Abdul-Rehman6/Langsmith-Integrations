@@ -6,7 +6,7 @@
 [![License](https://img.shields.io/badge/License-MIT-yellow)](https://opensource.org/licenses/MIT)
 [![Open Issues](https://img.shields.io/github/issues/Abdul-Rehman6/Langsmith-Integrations)](https://github.com/Abdul-Rehman6/Langsmith-Integrations/issues)
 
-## 🌟 Project Overvie
+## 🌟 Project Overview
 
 This repository is dedicated to demonstrating how to effectively instrument, trace, and debug various **Large Language Model (LLM) application architectures** using **LangSmith**.
 
