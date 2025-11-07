@@ -101,6 +101,24 @@ All examples securely load configuration from a `.env` file using the `python-do
 
 ## ▶️ Usage and Debugging
 
+### 💡 Debugging Workflow
+
+After successfully running a script, your console will output crucial information. This is the recommended workflow for utilizing LangSmith for debugging and performance analysis:
+
+1.  **Locate the Trace URL:** Look for the dedicated link printed to your console after the script finishes (e.g., `https://smith.langchain.com/public/...`).
+2.  **Jump to the UI:** Click the URL to jump directly to the **LangSmith UI** to view the trace.
+3.  **Inspect the Trace:**
+    * **Inputs/Outputs:** Examine the data passed between each component (`step`) of the application.
+    * **Performance Metrics:** View the **Latency** and **Token Usage** for performance tuning and cost analysis.
+    * **RAG Verification (Example: `3_rag.py`):** Verify that the **`retriever`** span returned relevant documents before the LLM generated the final answer. This is key to identifying retrieval failures.
+    * **Agent Reasoning (Example: `4_agent.py`):** Step through each **`action`** and **`thought`** to understand the agent's reasoning process and see why it chose a specific tool or chain.
+
+---
+
+## 📁 Project Structure
+
+The repository is organized to clearly delineate each LangSmith integration pattern:
+
 Run any script, and the trace will automatically be sent to your LangSmith project defined in the `.env` file.
 
 ```bash
